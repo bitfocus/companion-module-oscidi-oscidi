@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Generated output
+dist/
+pkg/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and local environment files
+.vscode/
+.idea/
+*.local
+.env
+.env.*

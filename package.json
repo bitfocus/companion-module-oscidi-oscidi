@@ -1,0 +1,36 @@
+{
+  "name": "companion-module-rasmuskreiner-oscidi",
+  "version": "0.1.2",
+  "description": "Bitfocus Companion module for controlling Oscidi over OSC/UDP.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasmuskreiner/companion-module-rasmuskreiner-oscidi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rasmuskreiner/companion-module-rasmuskreiner-oscidi/issues"
+  },
+  "homepage": "https://github.com/rasmuskreiner/companion-module-rasmuskreiner-oscidi#readme",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "build:module": "companion-module-build --output ./pkg/oscidi",
+    "build:dev": "companion-module-build --dev --output ./pkg/oscidi",
+    "check": "tsc --noEmit && companion-module-check"
+  },
+  "keywords": [
+    "bitfocus",
+    "companion",
+    "oscidi",
+    "osc",
+    "midi"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@companion-module/base": "^1.11.3",
+    "osc": "^2.4.5"
+  },
+  "devDependencies": {
+    "@companion-module/tools": "^2.3.0",
+    "typescript": "^5.4.0"
+  }
+}
