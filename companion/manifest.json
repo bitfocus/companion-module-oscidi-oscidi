@@ -1,34 +1,27 @@
 {
-  "$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
-  "type": "connection",
-  "id": "rasmuskreiner-oscidi",
-  "name": "Oscidi",
-  "shortname": "Oscidi",
-  "description": "Control Oscidi over OSC/UDP from Bitfocus Companion.",
-  "version": "0.1.2",
-  "license": "MIT",
-  "repository": "https://github.com/rasmuskreiner/companion-module-rasmuskreiner-oscidi",
-  "bugs": "https://github.com/rasmuskreiner/companion-module-rasmuskreiner-oscidi/issues",
-  "maintainers": [
-    {
-      "name": "Rasmus Kreiner"
-    }
-  ],
-  "runtime": {
-    "type": "node22",
-    "api": "nodejs-ipc",
-    "apiVersion": "0.0.0",
-    "entrypoint": "../dist/index.js"
-  },
-  "legacyIds": [],
-  "manufacturer": "Oscidi",
-  "products": [
-    "Oscidi"
-  ],
-  "keywords": [
-    "oscidi",
-    "osc",
-    "midi",
-    "routing"
-  ]
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "oscidi-oscidi",
+	"name": "Oscidi",
+	"shortname": "Oscidi",
+	"description": "Control Oscidi over OSC/UDP from Bitfocus Companion.",
+	"version": "0.1.2",
+	"license": "MIT",
+	"repository": "https://github.com/bitfocus/companion-module-oscidi-oscidi",
+	"bugs": "https://github.com/bitfocus/companion-module-oscidi-oscidi/issues",
+	"maintainers": [
+		{
+			"name": "Rasmus Kreiner"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../dist/main.js"
+	},
+	"legacyIds": ["rasmuskreiner-oscidi"],
+	"manufacturer": "Oscidi",
+	"products": ["Oscidi"],
+	"keywords": ["oscidi", "osc", "midi", "routing"]
 }
